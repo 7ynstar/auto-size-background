@@ -2,6 +2,12 @@
 
 Auto Size Background can set background image auto fit screen
 
+# Example
+
+[Click Me Open](https://7ynstar.github.io/auto-size-background/)
+
+Stretch the webpage to see the effect
+
 ## Installation
 
 ```sh
@@ -17,9 +23,7 @@ import img from 'img-link-here'
 
 export default props => {
   return (
-    <AutoSizeBackground
-      src={img}
-    >
+    <AutoSizeBackground src={img}>
       {props.children}
     </AutoSizeBackground>
   )

@@ -44,11 +44,11 @@ module.exports = {
       {
         test: /\.(jpg|png|ico|jpeg|gif)$/,
         use: [{
-          loader: "file-loader",
+          loader: 'file-loader',
           options: {
-            name: "[name].[ext]",
-            publicPath: "../images/",
-            outputPath: "images/"
+            name: '[name].[ext]',
+            publicPath: 'img',
+            outputPath: 'img'
           }
         }]
       },

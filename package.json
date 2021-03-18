@@ -1,6 +1,6 @@
 {
   "name": "auto-size-background",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Background component that adapts to screen changes",
   "main": "lib/index.js",
   "scripts": {
@@ -14,6 +14,14 @@
   },
   "author": "changhsin",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7ynstar/auto-size-background.git"
+  },
+  "bugs": {
+    "url": "https://github.com/7ynstar/auto-size-background/issues"
+  },
+  "homepage": "https://github.com/7ynstar/auto-size-background#readme",
   "dependencies": {
     "classnames": "^2.2.6",
     "react": "^17.0.1",
