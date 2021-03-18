@@ -7,4 +7,13 @@
   top: 0;
   z-index: 1;
   overflow: hidden;
+  pointer-events: none;
+}
+
+.content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  z-index: 2;
 }

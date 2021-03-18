@@ -2,7 +2,7 @@
 
 Auto Size Background can set background image auto fit screen
 
-# Example
+## Example
 
 [Click Me Open](https://7ynstar.github.io/auto-size-background/)
 
@@ -30,10 +30,21 @@ export default props => {
 }
 ```
 
+## API
 
-### Run from local
+|  参数            |  说明         |   类型   | 默认值  |
+| :-------------- | :------------ | :----   | :----- |
+| src             | 图片地址       | string  |   -    |
+| wrapClassName   | 背景容器的类名  | string  |   -    |
+| className       | 内容容器的类名  | string  |   -    |
+
+## Run from local
 
 ```bash
 $ npm install
 $ npm start
 ```
+
+## LICENSE
+
+MIT

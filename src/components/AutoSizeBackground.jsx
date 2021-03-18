@@ -6,6 +6,8 @@ class AutoSizeBackground extends React.Component {
 
   static defaultProps = {
     src: null,
+    wrapClassName: '',
+    className: '',
   }
 
   state = {
@@ -74,6 +76,7 @@ class AutoSizeBackground extends React.Component {
 
     const {
       children,
+      wrapClassName,
       className,
       style,
       src,
@@ -96,25 +99,29 @@ class AutoSizeBackground extends React.Component {
         position: 'absolute',
       }
 
-    const cls = classNames(styles.bg, className)
-    
-    return (
+    const wrapCls = classNames(styles.bg, wrapClassName)
+
+    const cls = classNames(styles.content, className)
+
+    return src ? (
       <>
-        {src && (
-          <div
-            id="skin-bg"
-            className={cls}
-            style={style}
-          >
-            <img
-              src={src}
-              alt=""
-              style={imageStyle}
-            />
-          </div>
-        )}
-        {children}
+        <div
+          id="skin-bg"
+          className={wrapCls}
+          style={style}
+        >
+          <img
+            src={src}
+            alt=""
+            style={imageStyle}
+          />
+        </div>
+        <div className={cls}>
+          {children}
+        </div>
       </>
+    ) : (
+      <>{children}</>
     )
   }
 }
