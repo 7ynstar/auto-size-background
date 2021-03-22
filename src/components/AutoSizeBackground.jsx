@@ -1,6 +1,7 @@
 import React from 'react'
-import classNames from 'classnames'
-import styles from './AutoSizeBackground.css'
+// import classNames from 'classnames'
+// import styles from './AutoSizeBackground.css'
+import './AutoSizeBackground.css'
 
 class AutoSizeBackground extends React.Component {
 
@@ -99,15 +100,16 @@ class AutoSizeBackground extends React.Component {
         position: 'absolute',
       }
 
-    const wrapCls = classNames(styles.bg, wrapClassName)
+    // const wrapCls = classNames(styles.bg, wrapClassName)
 
-    const cls = classNames(styles.content, className)
+    // const cls = classNames(styles.content, className)
 
     return src ? (
       <>
         <div
           id="skin-bg"
-          className={wrapCls}
+          // className={wrapCls}
+          className="auto-size-background-style"
           style={style}
         >
           <img
@@ -116,7 +118,8 @@ class AutoSizeBackground extends React.Component {
             style={imageStyle}
           />
         </div>
-        <div className={cls}>
+        {/* <div className={cls}> */}
+        <div className="auto-size-background-content-style">
           {children}
         </div>
       </>

@@ -1,10 +1,11 @@
 {
   "name": "auto-size-background",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Background component that adapts to screen changes",
   "main": "lib/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
+    "dev": "npm run start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "transpile": "babel src -d lib --copy-files",
     "pub": "npm publish",
