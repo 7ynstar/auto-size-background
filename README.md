@@ -35,8 +35,6 @@ export default props => {
 |  参数            |  说明         |   类型   | 默认值  |
 | :-------------- | :------------ | :----   | :----- |
 | src             | 图片地址       | string  |   -    |
-| wrapClassName   | 背景容器的类名  | string  |   -    |
-| className       | 内容容器的类名  | string  |   -    |
 
 ## Run from local
 

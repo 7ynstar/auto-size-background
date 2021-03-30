@@ -31,41 +31,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
-        // use: [
-        //   'style-loader',
-        //   {
-        //     loader: 'css-loader',
-        //     options: {
-        //       modules: true,
-        //     },
-        //   }
-        // ]
       },
-      // {
-      //   test: /\.css$/i,
-      //   loader: "css-loader",
-      //   options: {
-      //     modules: true,
-      //   },
-      // },
-      // {
-      //   test: /\.css$/i,
-      //   loader: "css-loader",
-      //   options: {
-      //     modules: {
-      //       compileType: "module",
-      //       mode: "local",
-      //       auto: true,
-      //       exportGlobals: true,
-      //       localIdentName: "[path][name]__[local]--[hash:base64:5]",
-      //       localIdentContext: path.resolve(__dirname, "src"),
-      //       localIdentHashPrefix: "my-custom-hash",
-      //       namedExport: true,
-      //       exportLocalsConvention: "camelCase",
-      //       exportOnlyLocals: false,
-      //     },
-      //   },
-      // },
       {
         test: /\.(jpg|png|ico|jpeg|gif)$/,
         use: [{

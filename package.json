@@ -1,6 +1,6 @@
 {
   "name": "auto-size-background",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Background component that adapts to screen changes",
   "main": "lib/index.js",
   "scripts": {
