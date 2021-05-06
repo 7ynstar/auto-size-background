@@ -118,9 +118,9 @@ class AutoSizeBackground extends React.Component {
         >
           <img src={src} alt="" style={imageStyle} />
         </div>
-        {/* <div  className="auto-size-background-content-style"> */}
+        <div  className="auto-size-background-content-style">
           {children}
-        {/* </div> */}
+        </div>
       </>
     ) : (
       <>{children}</>
