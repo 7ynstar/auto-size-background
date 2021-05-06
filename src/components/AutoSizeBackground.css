@@ -9,10 +9,10 @@
   pointer-events: none;
 }
 
-.auto-size-background-content-style {
+/* .auto-size-background-content-style {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -60%);
   z-index: 2;
-}
+} */

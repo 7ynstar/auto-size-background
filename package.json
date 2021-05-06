@@ -1,6 +1,6 @@
 {
   "name": "auto-size-background",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Background component that adapts to screen changes",
   "main": "lib/index.js",
   "scripts": {
@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/7ynstar/auto-size-background#readme",
   "dependencies": {
-    "classnames": "^2.2.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
