@@ -1,5 +1,5 @@
-import AutoSizeBackground from './components/AutoSizeBackground'
+import AutoSizeBackground from "./components/AutoSizeBackground";
 
-export { AutoSizeBackground }
+export { AutoSizeBackground };
 
-export default AutoSizeBackground
+export default AutoSizeBackground;
