@@ -34,7 +34,8 @@ export default props => {
 
 |  参数            |  说明         |   类型   | 默认值  |
 | :-------------- | :------------ | :----   | :----- |
-| src             | 图片地址       | string  |   -    |
+| src             | 图片地址       | `string`  |   -    |
+| dtl             | 图片伸缩方向，现在支持垂直、水平       | `vertical` \| `horizontal`  |   `horizontal`    |
 
 ## Run from local
 
