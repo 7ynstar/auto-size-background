@@ -4,6 +4,6 @@ import AutoSizeBackground from "../../src/";
 import imgHorizontal from "../../src/img_horizontal.jpg";
 import imgVertical from "../../src/img_vertical.png";
 
-const App = () => <AutoSizeBackground src={imgVertical} dtl="vertical" />;
+const App = () => <AutoSizeBackground src={imgVertical} />;
 
 render(<App />, document.getElementById("root"));

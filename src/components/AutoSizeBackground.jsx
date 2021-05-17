@@ -4,7 +4,7 @@ import "./AutoSizeBackground.css";
 class AutoSizeBackground extends React.Component {
   static defaultProps = {
     src: null,
-    dtl: "horizontal",
+    mode: "normal",
   };
 
   state = {
@@ -42,7 +42,7 @@ class AutoSizeBackground extends React.Component {
   }
 
   handleResize = () => {
-    const { dtl } = this.props;
+    const { mode } = this.props;
 
     const innerWidth = window.innerWidth;
     const innerHeight = window.innerHeight;
@@ -56,7 +56,7 @@ class AutoSizeBackground extends React.Component {
     let calcWidth = 0;
     let calcHeight = 0;
 
-    if (dtl === "vertical") {
+    if (mode === "sticky") {
       calcWidth = widthRatio * screenWidth;
       calcHeight = heightRatio * screenHeight;
     } else {
@@ -72,7 +72,7 @@ class AutoSizeBackground extends React.Component {
     });
   };
 
-  calculateImgStyle = (dtl) => {
+  calculateImgStyle = (mode) => {
     const { innerWidth, calcHeight, calcWidth, innerHeight } = this.state;
     const styleInherit = {
       width: `${innerWidth}px`,
@@ -90,14 +90,11 @@ class AutoSizeBackground extends React.Component {
       marginLeft: `${-calcWidth / 2}px`,
       position: "absolute",
     };
-    switch (dtl) {
+    switch (mode) {
       case "vertical":
-        if (calcWidth < innerHeight) {
-          return styleInherit;
-        }
-        return styleAbsolute;
+        return styleInherit;
       default:
-        if (calcWidth > innerHeight) {
+        if (calcHeight > innerHeight) {
           return styleInherit;
         }
         return styleAbsolute;
@@ -105,9 +102,9 @@ class AutoSizeBackground extends React.Component {
   };
 
   render() {
-    const { children, style, src, dtl } = this.props;
+    const { children, style, src, mode } = this.props;
 
-    const imageStyle = this.calculateImgStyle(dtl);
+    const imageStyle = this.calculateImgStyle(mode);
 
     return src ? (
       <>
