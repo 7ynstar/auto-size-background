@@ -35,7 +35,7 @@ export default props => {
 |  参数            |  说明         |   类型   | 默认值  |
 | :-------------- | :------------ | :----   | :----- |
 | src             | 图片地址       | `string`  |   -    |
-| dtl             | 图片伸缩方向，现在支持垂直、水平       | `vertical` \| `horizontal`  |   `horizontal`    |
+| mode             | 图片展示模式，支持平铺，粘连       | `noraml` \| `sticky`  |   `normal`    |
 
 ## Run from local
 
